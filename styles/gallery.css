@@ -1,0 +1,136 @@
+html {
+    background: url(../assets/whitewoodwall.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* sidebar styles */
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed; /* stays in place */
+	z-index: 1; /* stay on top */
+	top: 0; /* stay at the top */
+	left: 0;
+	/*background-color: #111;*/
+	background: url(../assets/shibuya.jpg) no-repeat fixed;
+	overflow-x: hidden; /* disable horizontal scroll */
+	padding-top: 60px;
+	transition: 0.5s; /* 0.5s transition effect for opening sidenav */
+}
+
+/* sidebar menu links */
+.sidebar a {
+	white-space: nowrap;
+	padding: 8px 8px 6px 28px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.15s;
+	cursor: pointer;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar a.insta {
+	display: inline-block;
+	transition: 0.15s;
+	filter: brightness(0.65);
+	cursor: pointer;
+	margin-left: 0;
+}
+
+.sidebar a.insta:hover {
+	filter: brightness(1);
+}
+
+.sidebar a.twitter {
+	padding: 8px 8px 6px 1px;
+	display: inline-block;
+	transition: 0.15s;
+	filter: brightness(0.65);
+	cursor: pointer;
+	margin-left: 0;
+}
+
+.sidebar a.twitter:hover {
+	filter: brightness(1);
+}
+
+/* Position and style close button */
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+/* Push content to right */
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+/* On smaller screens where height is less than 450px: less padding + smaller font size */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+img.menubutton {
+	position: fixed;
+	display: inline-block;
+	top: 22px;
+	margin-left:14px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	transition: 0.15s;
+	filter: brightness(0.65);
+}
+
+img.menubutton:hover + span.menu {	
+	color: white;
+}
+
+span.menu {
+	position:fixed;
+	font-size: 50px;
+	cursor:pointer;
+	color: #A0A0A0;
+	display:inline-block;
+	transition: 0.15s;
+	margin-left: 58px;
+	top: 14px
+}
+
+span.menu:hover {
+	color: white;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0px;
+	justify-content: center;
+}
+
+.column {
+	flex: 50%;
+	max-width: 750px;
+	padding: 0 0px;
+	margin: 0px;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/website.css">
+    <title>Hello World! Welcome to my Website</title>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/website.js"></script>
+</head>
+
+<body>
+
+<!--navigation sidebar-->
+<div id="sideBar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a>
+	<a href="javascript:void(0)" onclick="openNav()">About Me</a>
+	<a href="#">Projects</a>
+	<a href="gallery.html">Gallery</a>
+	<div style="white-space:nowrap;">
+		<a href="https://www.instagram.com/chen_da_man/" class="insta">
+		<img src="assets/instalogowhite.png" alt="Go to Instagram profile" width="31" height="31">
+		</a>
+		<a href="https://twitter.com/Jyntaro1" class="twitter">
+		<img src="assets/twitterlogowhite.png" alt="Go to Twitter profile" width="34" height="30">
+		</a>
+		<a href="https://www.linkedin.com/in/bradford-chen/" class="twitter">
+		<img src="assets/linkedinlogowhite.png" alt="Go to LinkedIn profile" width="31" height="30">
+		</a>
+	</div>
+</div>
+
+<!--all content in main is pushed to the right when opening sidebar-->
+<div id="main">
+<img src="assets/menubuttonwhite.png" class="menubutton" onclick="openNav()">
+<span class="menu" onclick="openNav()">Menu</span>
+<img src="assets/destinations3.png" alt="my favorite destinations:" width="700" border="0">
+<!--flexbox gridding used-->
+<div class="row">
+	<div class="column">
+		<p class="fav"> Websites </p>
+		<a href="https://waitbutwhy.com/">
+		<img src="assets/WaitButWhyLogo.png" alt="Go to WaitButWhy site" width="577" height="162" border="0">
+		</a>
+		<a href="https://www.cyberpunk.net/">
+		<img src="assets/cyberpunk_banner.png" alt="Go to Cyberpunk2077's site" width="577" height="162" border="0">
+		</a>
+	</div>
+	<div class="column">
+		<p class="fav"> Content Creators </p>
+		<a href="https://www.youtube.com/user/videogamedunkey/featured">
+		<img src="assets/dunkey_banner.jpg" alt="Go to Dunkey's Youtube page" width="577" height="162" border="0">
+		</a>
+		<a href="https://www.youtube.com/user/simonandmartina/">
+		<img src="assets/simonmartina_banner.jpg" alt="Go to Simon and Martina's Youtube page" width="577" height="162" border="0">
+		</a>
+		<a href="https://www.youtube.com/user/Nerdwriter1/">
+		<img src="assets/nerdwriter1_banner.jpg" alt="Go to Nerdwriter's Youtube page" width="577" height="162" border="0">
+		</a>
+		<a href="https://www.youtube.com/channel/UCErSSa3CaP_GJxmFpdjG9Jw/">
+		<img src="assets/lessons_banner.jpg" alt="Go to Lessons From the Screenplay page" width="577" height="162" border="0">
+		</a>
+</div>
+</div>
+</body>
+</html>
