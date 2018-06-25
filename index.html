@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>Home</title>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/index.js"></script>
+</head>
+
+<body>
+
+<!--navigation sidebar-->
+<div id="sideBar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a>
+	<a href="javascript:void(0)" onclick="openNav()">About Me</a>
+	<a href="#">Projects</a>
+	<a href="gallery.html">Gallery</a>
+	<div style="white-space:nowrap;">
+		<a href="https://www.instagram.com/chen_da_man/" class="insta">
+		<img src="assets/instalogowhite.png" alt="Go to Instagram profile" width="31" height="31">
+		</a>
+		<a href="https://twitter.com/Jyntaro1" class="twitter">
+		<img src="assets/twitterlogowhite.png" alt="Go to Twitter profile" width="34" height="30">
+		</a>
+		<a href="https://www.linkedin.com/in/bradford-chen/" class="twitter">
+		<img src="assets/linkedinlogowhite.png" alt="Go to LinkedIn profile" width="31" height="30">
+		</a>
+	</div>
+</div>
+
+<!--all content in main is pushed to the right when opening sidebar-->
+<div id="main">
+<img src="assets/menubuttonwhite.png" class="menubutton" onclick="openNav()">
+<span class="menu" onclick="openNav()">Menu</span>
+</div>
+
+<!--display the first block:about-->
+<div class="first">
+	<p class="aboutme"> Bradford Chen </p>
+	<div class="line"></div>
+	<div class="col">
+		<img src="assets/profpic.png" alt="self-portrait" class="profpic">
+	</div>
+	<div class="col2">
+		<p class="about"> 
+		Programmer and aspiring designer hoping to create memorable experiences. 
+		I'm currently a Junior at the University of Washington studying Computer Science and foreign languages.
+		I enjoy the creative aspects of CS like web and game design.</p>
+	</div>
+</div>
+
+<!--display the second block:portfolio-->
+<div class="second">
+	<p class="portfolio"> Portfolio </p>
+	<div class="line" style="min-width:400px;margin-bottom:60px"></div>
+	<div class="projectcol">
+		<img src="assets/HyperspeedFightersInGame.png" alt="hyperspeed fighters" class="game">
+	</div>
+	<div class="projectcol">
+		<img src="assets/CampusMaps.png" alt="campus maps" class="map">
+	</div>
+	<div class="projectcol">
+		<img src="assets/333gle3.png" alt="campus maps" class="333gle" width="100%">
+	</div>
+</div>
+</body>
+</html>

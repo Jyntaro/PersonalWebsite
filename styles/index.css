@@ -1,0 +1,268 @@
+body {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+
+p.fav {
+	color: #ffbf00;
+    border-style: double;
+    border-width: thick;
+    text-shadow: 1px 1px #ff69b4;
+    font-size: 36px;
+}
+
+p.openmenu {
+	color: white;
+	font-size: 60px;
+	top: 16px;
+}
+
+.first p.aboutme {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #404040;
+	flex: 100%;
+	vertical-align: middle;
+	padding-top: 50px;
+	font-size: 60px;
+}
+
+.line {
+	margin-left: 99%;
+	margin-right: 99%;
+	flex: 100%;
+	background-color: #404040;
+	height: 5px;
+	margin-top: 40px;
+	min-width: 530px;
+}
+
+.col2 p.about {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #404040;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col img.profpic {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	vertical-align: middle;
+}
+
+.first {
+	background-color: #F8F8F8;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding-top: 70px;
+	padding-bottom: 40px;
+	top: 0;
+	justify-content: center;
+}
+
+.col {
+	flex: 50%;
+	max-width: 400px;
+    padding: 0 0px;
+	margin: 10px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.col2 {
+	flex: 50%;
+	max-width: 500px;
+    padding: 0 0px;
+	margin: 10px;
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
+
+/* Responsive layout - makes a single column layout when contents don't fit on screen */
+@media screen and (max-width: 800px) {
+	.col {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.col2 {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.second {
+	background-color: #F8F8F8;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	margin-top: 7px;
+	padding: 0 0px;
+	justify-content: center;
+	align-items: center;
+}
+
+p.portfolio {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #404040;
+	flex: 100%;
+	vertical-align: middle;
+	padding-top: 50px;
+	font-size: 60px;
+}
+
+.projectcol {
+	margin: 3px;
+	padding: 0 0px;
+}
+
+img.game {
+	width: 100%;
+	height: auto;
+}
+
+img.map {
+	width: 100%;
+	height: auto;
+}
+
+img.333gle {
+	height: auto;
+}
+
+@media (min-width: 720px) {
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projectcol {
+    width: calc(20% - 16px);
+  }
+}
+
+/* sidebar styles */
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed; /* stays in place */
+	z-index: 1; /* stay on top */
+	top: 0; /* stay at the top */
+	left: 0;
+	/*background-color: #111;*/
+	background: url(../assets/shibuya.jpg) no-repeat fixed;
+	overflow-x: hidden; /* disable horizontal scroll */
+	padding-top: 60px;
+	transition: 0.5s; /* 0.5s transition effect for opening sidenav */
+}
+
+/* sidebar menu links */
+.sidebar a {
+	white-space: nowrap;
+	padding: 8px 8px 6px 28px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.15s;
+	cursor: pointer;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar a.insta {
+	display: inline-block;
+	transition: 0.15s;
+	filter: brightness(0.65);
+	cursor: pointer;
+	margin-left: 0;
+}
+
+.sidebar a.insta:hover {
+	filter: brightness(1);
+}
+
+.sidebar a.twitter {
+	padding: 8px 8px 6px 1px;
+	display: inline-block;
+	transition: 0.15s;
+	filter: brightness(0.65);
+	cursor: pointer;
+	margin-left: 0;
+}
+
+.sidebar a.twitter:hover {
+	filter: brightness(1);
+}
+
+/* Position and style close button */
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* Push content to right */
+#main {
+	background: #383838;
+	transition: margin-left .5s;
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+}
+
+/* On smaller screens where height is less than 450px: less padding + smaller font size */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+img.menubutton {
+	position: fixed;
+	display: inline-block;
+	top: 18px;
+	margin-left:14px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	transition: 0.15s;
+	filter: brightness(0.65);
+}
+
+img.menubutton:hover + span.menu {	
+	color: white;
+}
+
+
+span.menu {
+	position: fixed;
+	font-size: 50px;
+	cursor: pointer;
+	color: #A0A0A0;
+	display: inline-block;
+	transition: 0.15s;
+	margin-left: 58px;
+	top: 12px
+}
+
+span.menu:hover {
+	color: white;
+}
